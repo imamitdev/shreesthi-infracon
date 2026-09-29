@@ -434,7 +434,7 @@ function initAppointmentForm() {
     setTimeout(() => {
       const confirmWA = confirm("Thank you! Would you also like to send this inquiry directly to our team via WhatsApp for instant response?");
       if (confirmWA) {
-        window.open(`https://wa.me/919876543210?text=${waText}`, '_blank');
+        window.open(`https://wa.me/917266000669?text=${waText}`, '_blank');
       }
       form.reset();
     }, 800);
