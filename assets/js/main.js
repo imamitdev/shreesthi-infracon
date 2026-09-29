@@ -218,6 +218,7 @@ function initGalleryLightbox() {
   const closeBtn = document.getElementById('lightboxClose');
   const prevBtn = document.getElementById('lightboxPrev');
   const nextBtn = document.getElementById('lightboxNext');
+  const captionEl = document.getElementById('lightboxCaption');
 
   if (!lightbox || !lightboxImg) return;
 
@@ -225,9 +226,13 @@ function initGalleryLightbox() {
   galleryItems.forEach((item, index) => {
     const img = item.querySelector('img');
     if (img) {
+      const captionText = item.getAttribute('data-caption') || 
+                          item.querySelector('.gallery-caption')?.textContent || 
+                          img.getAttribute('alt') || 
+                          `On-Site Photo ${index + 1}`;
       images.push({
         src: img.getAttribute('src') || img.src,
-        caption: item.querySelector('.gallery-caption')?.textContent || `Gallery Image ${index + 1}`
+        caption: captionText
       });
     }
   });
@@ -235,9 +240,13 @@ function initGalleryLightbox() {
   let currentIndex = 0;
 
   const updateLightbox = (idx) => {
+    if (images.length === 0) return;
     currentIndex = (idx + images.length) % images.length;
     lightboxImg.src = images[currentIndex].src;
     lightboxImg.alt = images[currentIndex].caption;
+    if (captionEl) {
+      captionEl.textContent = images[currentIndex].caption;
+    }
   };
 
   const openLightbox = (index) => {

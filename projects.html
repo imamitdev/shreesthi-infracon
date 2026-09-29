@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Projects | Shreesthi Infracon Pvt. Ltd.</title>
-  <meta name="description" content="Explore landmark completed and delivered plotted, residential, and commercial projects by Shreesthi Infracon Pvt. Ltd. in Lucknow, Uttar Pradesh.">
+  <title>Our Projects &amp; Developments | Shreesthi Infracon Pvt. Ltd.</title>
+  <meta name="description" content="Explore master-planned delivered plotted townships, prime commercial complexes, and eco-luxury residential enclaves by Shreesthi Infracon Pvt. Ltd. in Lucknow.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Our Projects | Shreesthi Infracon Pvt. Ltd.">
+  <meta property="og:title" content="Our Projects & Developments | Shreesthi Infracon Pvt. Ltd.">
   <meta property="og:description" content="Explore delivered plotted townships, commercial hubs, and green residential communities in Lucknow.">
   <meta property="og:image" content="assets/images/logo/logo-banner-gold.jpg">
 
@@ -100,43 +100,53 @@
     </ul>
   </div>
 
-  <!-- ==================== HERO SECTION (BARNEY ESTATES STYLE) ==================== -->
-  <section class="lot-hero-banner" style="background-image: linear-gradient(180deg, rgba(7, 21, 14, 0.85) 0%, rgba(10, 28, 19, 0.95) 100%), url('assets/images/services/IMG-20221122-WA0013.jpg');">
+  <!-- ==================== HERO SECTION (BARNEY ESTATES LIVE STYLE) ==================== -->
+  <section class="lot-hero-banner" style="background-image: linear-gradient(180deg, rgba(7, 21, 14, 0.85) 0%, rgba(10, 28, 19, 0.96) 100%), url('assets/images/services/IMG-20221122-WA0013.jpg');">
     <div class="container">
-      <span class="section-tag" style="justify-content: center;">Portfolio of Delivered Excellence</span>
+      <span class="section-tag" style="justify-content: center; margin-bottom: 12px;">Premier Land &amp; Infrastructure Portfolio</span>
       <h1 class="lot-hero-title">
         Properties &amp; Projects in Lucknow
       </h1>
-      <p class="section-desc light" style="margin: 0 auto; max-width: 720px;">
-        Click on any project below to view full on-site photographs, technical master-plan specifications, location maps, and legal pack details.
+      <p class="section-desc light" style="margin: 0 auto 24px; max-width: 760px;">
+        Exclusively developed and delivered residential plotted townships, commercial hubs, and green communities. Click any project to inspect high-resolution on-site photographs, technical master plans, distance connectivity, and verified legal packs.
       </p>
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html#query" class="btn btn-gold" style="padding: 11px 24px;">
+          <i class="fas fa-calendar-check"></i> Book An Appointment
+        </a>
+        <a href="https://wa.me/919876543210?text=Hello%20Shreesthi%20Infracon%2C%20I%20am%20inquiring%20about%20your%20available%20projects." target="_blank" class="btn btn-outline-white" style="padding: 11px 24px;">
+          <i class="fab fa-whatsapp"></i> Chat On WhatsApp
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ==================== PROJECTS CATALOG GRID (BARNEY ESTATES GRID) ==================== -->
-  <section class="barney-catalog-section">
+  <!-- ==================== PROJECTS CATALOG (BARNEY ESTATES 3-COL GRID) ==================== -->
+  <section class="barney-catalog-section" style="padding: 60px 0 90px; background-color: var(--color-cream);">
     <div class="container">
       
-      <div class="barney-catalog-header">
-        <div>
-          <span class="section-tag">Featured Developments</span>
-          <h2 class="section-title" style="margin-bottom: 4px;">Our Landmark Projects</h2>
-          <p style="color: var(--color-text-secondary); font-size: 0.95rem;">Select any development to inspect comprehensive specifications</p>
+      <!-- Filter & Search Toolbar (Like live2.barneyestates.co.uk) -->
+      <div class="catalog-filter-bar">
+        <div class="catalog-filter-tabs">
+          <button class="catalog-tab-btn active" data-filter="all">All Projects (3)</button>
+          <button class="catalog-tab-btn" data-filter="township">Plotted Townships (1)</button>
+          <button class="catalog-tab-btn" data-filter="commercial">Commercial Hubs (1)</button>
+          <button class="catalog-tab-btn" data-filter="residential">Residential Enclaves (1)</button>
         </div>
-        <div>
-          <a href="index.html#query" class="btn btn-emerald" style="padding: 10px 20px; font-size: 0.85rem;">
-            <i class="fas fa-calendar-check"></i> Book An Appointment
-          </a>
+        
+        <div class="catalog-search-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" id="projectSearchInput" class="catalog-search-input" placeholder="Search by name, road or location...">
         </div>
       </div>
 
       <!-- 3-Column Lot Grid (Matching https://live2.barneyestates.co.uk/) -->
-      <div class="barney-lot-grid">
+      <div class="barney-lot-grid" id="projectsGrid">
         
-        <!-- Lot 1: Greenfield Plotted Township -->
-        <a href="project-1.html" class="barney-lot-card">
+        <!-- Project 01: Greenfield Plotted Township -->
+        <a href="project-1.html" class="barney-lot-card" data-category="township" data-title="greenfield plotted township outer ring road kisan path sultanpur">
           <div class="barney-lot-img-wrap">
-            <img src="assets/images/projects/project-1/IMG-20221129-WA0033.jpg" alt="Project 1: Greenfield Plotted Township" class="barney-lot-img">
+            <img src="assets/images/projects/project-1/IMG-20221129-WA0033.jpg" alt="Project 01: Greenfield Plotted Township" class="barney-lot-img">
             <span class="barney-lot-tag-badge">Delivered Township</span>
           </div>
           <div class="barney-lot-details">
@@ -147,13 +157,23 @@
             <div class="barney-lot-title">
               Greenfield Plotted Township, Outer Ring Road, Lucknow
             </div>
+            <div class="barney-lot-chips">
+              <span class="barney-lot-chip"><i class="fas fa-vector-square"></i> 25 Acres</span>
+              <span class="barney-lot-chip"><i class="fas fa-road"></i> 40ft/30ft Roads</span>
+              <span class="barney-lot-chip"><i class="fas fa-shield-alt"></i> Gated Boundary</span>
+              <span class="barney-lot-chip"><i class="fas fa-check-circle"></i> 180+ Delivered</span>
+            </div>
+            <div class="barney-lot-view-btn">
+              <span>View Full Lot Details</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </a>
 
-        <!-- Lot 2: Commercial Complex & Retail Hub -->
-        <a href="project-2.html" class="barney-lot-card">
+        <!-- Project 02: Commercial Complex & Retail Hub -->
+        <a href="project-2.html" class="barney-lot-card" data-category="commercial" data-title="commercial complex retail hub shaheed path gomti nagar extension">
           <div class="barney-lot-img-wrap">
-            <img src="assets/images/projects/project-2/IMG-20240621-WA0008.jpg" alt="Project 2: Commercial Complex & Retail Hub" class="barney-lot-img">
+            <img src="assets/images/projects/project-2/IMG-20240621-WA0008.jpg" alt="Project 02: Commercial Complex & Retail Hub" class="barney-lot-img">
             <span class="barney-lot-tag-badge">Commercial Landmark</span>
           </div>
           <div class="barney-lot-details">
@@ -164,13 +184,23 @@
             <div class="barney-lot-title">
               Commercial Complex &amp; Retail Hub, Shaheed Path, Gomti Nagar Extension
             </div>
+            <div class="barney-lot-chips">
+              <span class="barney-lot-chip"><i class="fas fa-building"></i> Multi-Storey Hub</span>
+              <span class="barney-lot-chip"><i class="fas fa-parking"></i> Ample Parking</span>
+              <span class="barney-lot-chip"><i class="fas fa-map-pin"></i> Shaheed Path Frontage</span>
+              <span class="barney-lot-chip"><i class="fas fa-chart-line"></i> High ROI Footfall</span>
+            </div>
+            <div class="barney-lot-view-btn">
+              <span>View Full Lot Details</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </a>
 
-        <!-- Lot 3: Nature Grove Residential Enclave -->
-        <a href="project-3.html" class="barney-lot-card">
+        <!-- Project 03: Nature Grove Residential Enclave -->
+        <a href="project-3.html" class="barney-lot-card" data-category="residential" data-title="nature grove residential enclave gomti nagar extension sultanpur road">
           <div class="barney-lot-img-wrap">
-            <img src="assets/images/projects/project-3/IMG-20240715-WA0023.jpg" alt="Project 3: Nature Grove Residential Enclave" class="barney-lot-img">
+            <img src="assets/images/projects/project-3/IMG-20240715-WA0023.jpg" alt="Project 03: Nature Grove Residential Enclave" class="barney-lot-img">
             <span class="barney-lot-tag-badge">Eco Residential</span>
           </div>
           <div class="barney-lot-details">
@@ -179,11 +209,38 @@
               <span class="barney-lot-price">Immediate Possession</span>
             </div>
             <div class="barney-lot-title">
-              Nature Grove Residential Enclave, Gomti Nagar Extension Periphery, Lucknow
+              Nature Grove Residential Enclave, Gomti Nagar Extension Periphery
+            </div>
+            <div class="barney-lot-chips">
+              <span class="barney-lot-chip"><i class="fas fa-tree"></i> Green Enclave</span>
+              <span class="barney-lot-chip"><i class="fas fa-file-signature"></i> Dakhil Kharij</span>
+              <span class="barney-lot-chip"><i class="fas fa-bolt"></i> Solar Lighting</span>
+              <span class="barney-lot-chip"><i class="fas fa-home"></i> Ready to Build</span>
+            </div>
+            <div class="barney-lot-view-btn">
+              <span>View Full Lot Details</span>
+              <i class="fas fa-arrow-right"></i>
             </div>
           </div>
         </a>
 
+      </div>
+
+      <!-- Advisory Banner below Grid -->
+      <div style="margin-top: 50px; background: #0f2e20; border-radius: 10px; padding: 36px 40px; border: 1px solid rgba(212, 175, 55, 0.3); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+        <div style="max-width: 650px;">
+          <span style="color: var(--color-gold-light); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; display: block; margin-bottom: 6px;">Bespoke Land Acquisition</span>
+          <h3 style="font-family: 'Libre Baskerville', serif; color: var(--color-white); font-size: 1.5rem; margin-bottom: 8px;">Looking for Large Land Parcels or Custom Commercial Plots?</h3>
+          <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem; margin: 0; line-height: 1.6;">Our in-house survey and legal diligence team assists corporate investors, builders, and high-net-worth individuals in verified land consolidation across Lucknow and Uttar Pradesh.</p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="index.html#query" class="btn btn-gold" style="padding: 12px 24px;">
+            <i class="fas fa-envelope-open-text"></i> For Query
+          </a>
+          <a href="tel:+919876543210" class="btn btn-outline-white" style="padding: 12px 22px;">
+            <i class="fas fa-phone-alt"></i> +91 98765 43210
+          </a>
+        </div>
       </div>
 
     </div>
@@ -269,6 +326,56 @@
     <span class="floating-whatsapp-tooltip">Chat with us on WhatsApp</span>
   </a>
 
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+      <img src="" alt="Enlarged Project Preview" class="lightbox-image" id="lightboxImg">
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
   <script src="assets/js/main.js"></script>
+  <script>
+    // Live Search and Category Filter for Projects Catalog
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('projectSearchInput');
+      const tabBtns = document.querySelectorAll('.catalog-tab-btn');
+      const cards = document.querySelectorAll('.barney-lot-card');
+
+      function filterCards() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const activeTab = document.querySelector('.catalog-tab-btn.active');
+        const filterVal = activeTab ? activeTab.getAttribute('data-filter') : 'all';
+
+        cards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          const title = card.getAttribute('data-title') || '';
+          const matchesCategory = (filterVal === 'all' || category === filterVal);
+          const matchesQuery = !query || title.includes(query);
+
+          if (matchesCategory && matchesQuery) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterCards);
+      }
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          filterCards();
+        });
+      });
+    });
+  </script>
 </body>
 </html>
