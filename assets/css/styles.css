@@ -898,24 +898,16 @@ button, input, select, textarea {
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  padding: 15px 4px 35px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-gold-base) rgba(255, 255, 255, 0.08);
+  padding: 15px 4px 25px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
   cursor: grab;
 }
 
 .services-scroll-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.services-scroll-container::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 4px;
-}
-
-.services-scroll-container::-webkit-scrollbar-thumb {
-  background: var(--color-gold-rich);
-  border-radius: 4px;
+  display: none; /* Safari and Chrome */
+  width: 0;
+  height: 0;
 }
 
 .service-card {
