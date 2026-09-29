@@ -127,6 +127,7 @@
         <!-- Separate Dedicated Page for Our Projects -->
         <a href="projects.html" class="nav-link" style="color: var(--color-gold-light);">Our Projects</a>
         <a href="#services" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="#contact" class="nav-link">Contacts</a>
       </nav>
 
@@ -155,6 +156,7 @@
       <li><a href="#about" class="mobile-nav-link">About us</a></li>
       <li><a href="projects.html" class="mobile-nav-link" style="color: var(--color-gold-base);">Our Projects</a></li>
       <li><a href="#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
       <li><a href="#contact" class="mobile-nav-link">Contacts</a></li>
     </ul>
   </div>
@@ -500,6 +502,76 @@
     </div>
   </section>
 
+  <!-- ==================== COMPANY GALLERY SHOWCASE ==================== -->
+  <section class="gallery-section" id="gallery" style="padding: 90px 0; background: var(--color-sage-whisper);">
+    <div class="container">
+      <div class="section-heading text-center reveal-on-scroll">
+        <span class="section-tag">Visual Portfolio</span>
+        <h2 class="section-title">Company Gallery &amp; Developments</h2>
+        <div class="heading-gold-divider"></div>
+        <p class="section-lead">
+          A visual glimpse into our on-site infrastructure, road developments, earthworks, and milestone achievements in Lucknow.
+        </p>
+      </div>
+
+      <div class="gallery-grid reveal-on-scroll">
+        <div class="gallery-item" data-caption="Township Road &amp; Infrastructure Demarcation">
+          <img src="assets/images/gallery/IMG_9667.JPG.jpeg" alt="Township Road and Infrastructure Demarcation" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-caption">Township Road &amp; Infrastructure Demarcation</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Earthwork &amp; Site Leveling Operations">
+          <img src="assets/images/gallery/20250602_171142.jpg" alt="Earthwork &amp; Site Leveling Operations" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-caption">Earthwork &amp; Site Leveling Operations</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Executive Site Inspection &amp; Foundation Ceremony">
+          <img src="assets/images/gallery/IMG-20250702-WA0082.jpg" alt="Executive Site Inspection and Launch" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-caption">Executive Inspection &amp; Project Launch</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Evening Infrastructure Progress &amp; Utility Work">
+          <img src="assets/images/gallery/20251224_190936.jpg" alt="Evening Infrastructure Progress" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-caption">Utility Installation &amp; Night Work</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="40ft Arterial Roads &amp; Green Boundary Development">
+          <img src="assets/images/gallery/20260211_162855.jpg" alt="Arterial Roads &amp; Green Boundary" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-caption">Arterial Roads &amp; Green Buffer</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="GPS Land Surveying &amp; Plot Demarcation">
+          <img src="assets/images/gallery/IMG_9947.JPG.jpeg" alt="Land Surveying and GPS Demarcation" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-caption">GPS Land Survey &amp; Plot Demarcation</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 45px;" class="reveal-on-scroll">
+        <a href="gallery.html" class="btn btn-primary" style="padding: 14px 34px; font-size: 0.95rem;">
+          <i class="fas fa-images" style="margin-right: 8px;"></i> View Full Company Gallery &amp; Moments
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== 4. FOR QUERY / APPOINTMENT SECTION ==================== -->
   <section class="appointment-section" id="query">
     <div class="container">
@@ -719,6 +791,7 @@
             <li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li>
             <li><a href="projects.html"><i class="fas fa-angle-right"></i> Our Projects</a></li>
             <li><a href="#services"><i class="fas fa-angle-right"></i> Services</a></li>
+            <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
             <li><a href="#contact"><i class="fas fa-angle-right"></i> Contacts</a></li>
           </ul>
         </div>
@@ -774,6 +847,17 @@
     <i class="fab fa-whatsapp"></i>
     <span class="floating-whatsapp-tooltip">Chat with us on WhatsApp</span>
   </a>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-hidden="true" aria-label="Image Preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" class="lightbox-img" id="lightboxImage">
+      <div id="lightboxCaption" style="text-align: center; color: #fff; margin-top: 15px; font-family: 'Libre Baskerville', serif; font-size: 1.05rem;"></div>
+    </div>
+  </div>
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>

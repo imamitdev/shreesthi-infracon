@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Company Gallery | Photos &amp; Developments - Shreesthi Infracon Pvt. Ltd.</title>
+  <meta name="description" content="Explore Shreesthi Infracon Pvt. Ltd. official gallery - on-site construction, township infrastructure, freehold plotted developments, office moments &amp; project milestones in Lucknow.">
+  <meta name="keywords" content="Shreesthi Infracon Gallery, Company Photos Shreesthi Infracon, Lucknow Real Estate Development Photos, Greenfield Township Site Photos, Gomti Nagar Extension Plots Images, Lucknow Construction Photos">
+  <meta name="author" content="Shreesthi Infracon Pvt. Ltd.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://www.shreesthiinfracon.com/gallery.html">
+
+  <!-- Geo Meta Tags for Lucknow Local SEO -->
+  <meta name="geo.region" content="IN-UP">
+  <meta name="geo.placename" content="Lucknow">
+  <meta name="geo.position" content="26.826504;80.998495">
+  <meta name="ICBM" content="26.826504, 80.998495">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="SHREESTHI INFRACON PVT. LTD.">
+  <meta property="og:title" content="Company Gallery &amp; Project Photos | Shreesthi Infracon Lucknow">
+  <meta property="og:description" content="Discover on-site developments, township roads, construction progress, and corporate milestones of Shreesthi Infracon in Lucknow.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.shreesthiinfracon.com/gallery.html">
+  <meta property="og:image" content="https://www.shreesthiinfracon.com/assets/images/gallery/IMG_9667.JPG.jpeg">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Company Gallery &amp; Photos | Shreesthi Infracon Lucknow">
+  <meta name="twitter:description" content="On-site development, infrastructure milestones &amp; moments from Shreesthi Infracon Pvt. Ltd. Lucknow.">
+  <meta name="twitter:image" content="https://www.shreesthiinfracon.com/assets/images/gallery/IMG_9667.JPG.jpeg">
+
+  <!-- Schema.org ImageGallery Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Shreesthi Infracon Company Gallery",
+    "description": "On-site infrastructure, civil developments, plotted townships, and corporate milestones of Shreesthi Infracon Pvt. Ltd. in Lucknow.",
+    "url": "https://www.shreesthiinfracon.com/gallery.html",
+    "provider": {
+      "@type": "RealEstateAgent",
+      "name": "Shreesthi Infracon Pvt. Ltd.",
+      "telephone": "+91 98765 43210",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "D1/17 Vardaan Khand near CMS Shaheed Path, Gomti Nagar Extension",
+        "addressLocality": "Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "226010",
+        "addressCountry": "IN"
+      }
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo/logo-icon-gold.png">
+
+  <!-- Google Fonts: Libre Baskerville + Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    /* Specific Gallery Page Enhancements */
+    .gallery-filter-wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 45px;
+    }
+    .gallery-filter-btn {
+      background: rgba(10, 28, 19, 0.05);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      color: var(--color-forest-dark);
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .gallery-filter-btn:hover,
+    .gallery-filter-btn.active {
+      background: var(--color-forest-dark);
+      color: var(--color-gold-base);
+      border-color: var(--color-forest-dark);
+      box-shadow: 0 4px 15px rgba(10, 28, 19, 0.15);
+    }
+    .gallery-card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+      height: 280px;
+    }
+    .gallery-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .gallery-card:hover .gallery-card-img {
+      transform: scale(1.08);
+    }
+    .gallery-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7, 21, 14, 0.1) 0%, rgba(7, 21, 14, 0.85) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 22px;
+      color: #fff;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-card-tag {
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--color-gold-light);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .gallery-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+    .gallery-card-sub {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.4;
+    }
+    .gallery-zoom-badge {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(10, 28, 19, 0.75);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      color: var(--color-gold-base);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.3s ease;
+    }
+    .gallery-card:hover .gallery-zoom-badge {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .gallery-notice-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 20px;
+      font-size: 0.82rem;
+      color: #725807;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Gomti Nagar Extension, Shaheed Path, Lucknow, UP</span>
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:shreesthiinfracon@gmail.com">shreesthiinfracon@gmail.com</a>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-tagline">“Creating the Canvas for a New Tomorrow”</span>
+        <div class="top-bar-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STICKY NAVIGATION RIBBON ==================== -->
+  <header class="header-sticky" id="mainHeader">
+    <div class="container header-inner">
+      <a href="index.html#hero" class="brand-link">
+        <img src="assets/images/logo/logo-icon-gold.png" alt="Shreesthi Infracon Emblem" class="brand-emblem">
+        <div class="brand-text">
+          <span class="brand-name">Shreesthi <span>Infracon</span></span>
+          <span class="brand-sub">Pvt. Ltd. &bull; Estd. 2019</span>
+        </div>
+      </a>
+
+      <!-- Menu items ordered according to user specification -->
+      <nav class="main-nav">
+        <a href="index.html#hero" class="nav-link">Home</a>
+        <a href="index.html#query" class="nav-link">For Query</a>
+        <a href="index.html#about" class="nav-link">About us</a>
+        <a href="projects.html" class="nav-link">Our Projects</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link active" style="color: var(--color-gold-light);">Gallery</a>
+        <a href="index.html#contact" class="nav-link">Contacts</a>
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <div class="header-actions">
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE NAVIGATION DRAWER ==================== -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-close-btn" id="mobileNavClose" aria-label="Close Navigation">&times;</button>
+    <div style="margin-bottom: 30px; text-align: center;">
+      <img src="assets/images/logo/logo-icon-gold.png" alt="Emblem" style="width: 60px; height: 60px; margin: 0 auto 10px;">
+      <h3 style="color: #fff; font-family: 'Libre Baskerville', serif; font-size: 1.3rem;">SHREESTHI INFRACON</h3>
+      <p style="color: #95d5b2; font-size: 0.8rem; letter-spacing: 2px;">PVT. LTD.</p>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="index.html#query" class="mobile-nav-link">For Query</a></li>
+      <li><a href="index.html#about" class="mobile-nav-link">About us</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Our Projects</a></li>
+      <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link active" style="color: var(--color-gold-base);">Gallery</a></li>
+      <li><a href="index.html#contact" class="mobile-nav-link">Contacts</a></li>
+    </ul>
+  </div>
+
+  <!-- ==================== HERO BANNER ==================== -->
+  <section class="lot-hero-banner" style="background: linear-gradient(rgba(7, 21, 14, 0.82), rgba(10, 28, 19, 0.9)), url('assets/images/services/IMG-20221122-WA0013.jpg') center/cover no-repeat; min-height: 380px;">
+    <div class="container text-center" style="position: relative; z-index: 2;">
+      <div style="display: inline-flex; align-items: center; gap: 8px; color: var(--color-gold-light); font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
+        <i class="fas fa-camera-retro"></i> Visual Portfolio &bull; Estd. 2019
+      </div>
+      <h1 class="lot-hero-title">Company Gallery</h1>
+      <p class="lot-hero-sub" style="max-width: 720px; margin: 0 auto 24px; color: rgba(255, 255, 255, 0.85); font-size: 1.05rem; line-height: 1.7;">
+        A visual showcase of our on-site infrastructure, road developments, earthworks, and milestone achievements shaping premium communities across Lucknow.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 15px; font-size: 0.88rem; color: #95d5b2;">
+        <span><a href="index.html" style="color: #95d5b2; text-decoration: none;">Home</a></span>
+        <span>&bull;</span>
+        <span style="color: var(--color-gold-light);">Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY SHOWCASE ==================== -->
+  <section style="padding: 80px 0; background: var(--color-sage-whisper);">
+    <div class="container">
+      
+      <!-- Section Intro & Categories -->
+      <div class="text-center" style="max-width: 780px; margin: 0 auto 35px;">
+        <div class="gallery-notice-badge">
+          <i class="fas fa-check-circle" style="color: #d4af37;"></i>
+          <span>Official Company Photography &bull; Shreesthi Infracon Pvt. Ltd.</span>
+        </div>
+        <h2 style="font-family: var(--font-serif); font-size: clamp(1.8rem, 3.2vw, 2.4rem); color: var(--color-forest-dark); margin-bottom: 14px;">
+          Explore On-Site Progress &amp; Milestones
+        </h2>
+        <div class="heading-gold-divider"></div>
+        <p style="color: #55685d; font-size: 0.98rem; line-height: 1.7;">
+          Browse through our curated collection of project photographs. Click any image to view in high resolution with complete details.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filter-wrap">
+        <button class="gallery-filter-btn active" data-filter="all">All Photos (6)</button>
+        <button class="gallery-filter-btn" data-filter="site-work">On-Site Infrastructure</button>
+        <button class="gallery-filter-btn" data-filter="township">Township Development</button>
+        <button class="gallery-filter-btn" data-filter="corporate">Corporate &amp; Ceremonies</button>
+      </div>
+
+      <!-- Gallery Grid (6 High Quality Company Images) -->
+      <div class="row g-4" id="galleryContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px;">
+        
+        <!-- Image 1: Road & Infrastructure Demarcation -->
+        <div class="gallery-card-wrapper" data-category="site-work">
+          <div class="gallery-card gallery-item" data-caption="Township Road &amp; Infrastructure Demarcation - Greenfield Corridor, Lucknow">
+            <img src="assets/images/gallery/IMG_9667.JPG.jpeg" alt="Township Road and Infrastructure Demarcation" class="gallery-card-img">
+            <div class="gallery-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">On-Site Infrastructure</span>
+              <h3 class="gallery-card-title">Road Demarcation &amp; Drainage Laying</h3>
+              <p class="gallery-card-sub">Outer Ring Road Corridor, Lucknow</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 2: Earthwork & Leveling -->
+        <div class="gallery-card-wrapper" data-category="township">
+          <div class="gallery-card gallery-item" data-caption="Earthwork &amp; Site Leveling Operations - Master Plotted Development">
+            <img src="assets/images/gallery/20250602_171142.jpg" alt="Earthwork and Site Leveling Operations" class="gallery-card-img">
+            <div class="gallery-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Township Development</span>
+              <h3 class="gallery-card-title">Earthwork &amp; Ground Leveling</h3>
+              <p class="gallery-card-sub">Heavy machinery on-site preparing plotted blocks</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 3: Executive Site Briefing & Project Launch -->
+        <div class="gallery-card-wrapper" data-category="corporate">
+          <div class="gallery-card gallery-item" data-caption="Executive Site Inspection &amp; Foundation Ceremony - Shreesthi Infracon Leadership">
+            <img src="assets/images/gallery/IMG-20250702-WA0082.jpg" alt="Executive Site Inspection and Launch Ceremony" class="gallery-card-img">
+            <div class="gallery-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Corporate &amp; Ceremonies</span>
+              <h3 class="gallery-card-title">Executive Inspection &amp; Launch</h3>
+              <p class="gallery-card-sub">Leadership team and civil engineers during project review</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 4: Night Operations & Site Lighting -->
+        <div class="gallery-card-wrapper" data-category="site-work">
+          <div class="gallery-card gallery-item" data-caption="Evening Infrastructure Progress &amp; High-Mast Security Lighting">
+            <img src="assets/images/gallery/20251224_190936.jpg" alt="Evening Infrastructure Progress and Security Lighting" class="gallery-card-img">
+            <div class="gallery-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">On-Site Infrastructure</span>
+              <h3 class="gallery-card-title">Utility Installation &amp; Lighting</h3>
+              <p class="gallery-card-sub">Continuous development with boundary surveillance setup</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 5: Wide Arterial Roads & Boundary -->
+        <div class="gallery-card-wrapper" data-category="township">
+          <div class="gallery-card gallery-item" data-caption="40ft Main Boulevard &amp; Perimeter Boundary Development">
+            <img src="assets/images/gallery/20260211_162855.jpg" alt="Main Boulevard and Perimeter Boundary Development" class="gallery-card-img">
+            <div class="gallery-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Township Development</span>
+              <h3 class="gallery-card-title">Arterial Roads &amp; Green Buffer</h3>
+              <p class="gallery-card-sub">Wide 40ft road connectivity and tree plantation grid</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 6: Land Surveying & Boundary Demarcation -->
+        <div class="gallery-card-wrapper" data-category="township">
+          <div class="gallery-card gallery-item" data-caption="Land Surveying &amp; GPS Plot Demarcation for Immediate Freehold Registry">
+            <img src="assets/images/gallery/IMG_9947.JPG.jpeg" alt="Land Surveying and GPS Plot Demarcation" class="gallery-card-img">
+            <div class="gallery-zoom-badge"><i class="fas fa-search-plus"></i></div>
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-tag">Township Development</span>
+              <h3 class="gallery-card-title">GPS Land Survey &amp; Plotting</h3>
+              <p class="gallery-card-sub">Exact coordinate mapping for 100% freehold registry</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Site Tour CTA Box -->
+      <div style="margin-top: 60px; background: var(--color-forest-dark); border-radius: 12px; padding: 45px 35px; color: #fff; text-align: center; position: relative; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.3);">
+        <div style="position: relative; z-index: 2; max-width: 680px; margin: 0 auto;">
+          <span style="color: var(--color-gold-light); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700;">Experience the Quality Firsthand</span>
+          <h3 style="font-family: var(--font-serif); font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 10px 0 16px; color: #fff;">
+            Book a Guided Site Tour in Lucknow
+          </h3>
+          <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem; margin-bottom: 28px; line-height: 1.6;">
+            Visit our township developments, inspect ongoing road and utility works, and meet our senior property advisors for personalized property selection.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <a href="index.html#query" class="btn btn-primary" style="padding: 13px 30px;">
+              <i class="fas fa-calendar-check" style="margin-right: 8px;"></i> Send Query / Book Tour
+            </a>
+            <a href="https://wa.me/919876543210?text=Hello%20Shreesthi%20Infracon%20Team%2C%20I%20would%20like%20to%20schedule%20a%20site%20visit%20to%20view%20your%20projects." target="_blank" class="btn btn-secondary" style="padding: 13px 26px; border-color: #25d366; color: #25d366;">
+              <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> WhatsApp Advisor
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LIGHTBOX MODAL ==================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-hidden="true" aria-label="Image Preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" class="lightbox-img" id="lightboxImage">
+      <div id="lightboxCaption" style="text-align: center; color: #fff; margin-top: 15px; font-family: 'Libre Baskerville', serif; font-size: 1.05rem;"></div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand-info">
+          <div class="footer-logo-row">
+            <img src="assets/images/logo/logo-icon-gold.png" alt="Shreesthi Infracon Logo" class="footer-emblem">
+            <div>
+              <div class="footer-brand-title">SHREESTHI INFRACON</div>
+              <div style="font-size: 0.72rem; color: #d4af37; letter-spacing: 2px;">PVT. LTD.</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            “Creating the Canvas for a New Tomorrow.” Established in 2019, delivering premium residential &amp; commercial plotted developments, construction services, and real estate investments in Lucknow.
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 6px;">
+            <a href="https://wa.me/919876543210" target="_blank" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:shreesthiinfracon@gmail.com" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #d4af37;"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+919876543210" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #95d5b2;"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Links Matching Wireframe -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#hero"><i class="fas fa-angle-right"></i> Home</a></li>
+            <li><a href="index.html#query"><i class="fas fa-angle-right"></i> For Query</a></li>
+            <li><a href="index.html#about"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-right"></i> Our Projects</a></li>
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Services</a></li>
+            <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-angle-right"></i> Contacts</a></li>
+          </ul>
+        </div>
+
+        <!-- Key Services -->
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Residential Projects</a></li>
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Commercial Projects</a></li>
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Plotted Developments</a></li>
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Investment Solutions</a></li>
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Construction Services</a></li>
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Property Consultancy</a></li>
+          </ul>
+        </div>
+
+        <!-- Office Details -->
+        <div>
+          <h4 class="footer-col-title">Contacts</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: rgba(255, 255, 255, 0.75); margin-bottom: 12px;">
+            <i class="fas fa-map-marker-alt" style="color: #d4af37; margin-right: 6px;"></i>
+            D1/17 Vardaan khand near CMS Shahedpath, Gomti nagar extension, Lucknow, UP
+          </p>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: rgba(255, 255, 255, 0.75); margin-bottom: 12px;">
+            <i class="fas fa-envelope" style="color: #d4af37; margin-right: 6px;"></i>
+            shreesthiinfracon@gmail.com
+          </p>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: rgba(255, 255, 255, 0.75);">
+            <i class="fas fa-phone-alt" style="color: #d4af37; margin-right: 6px;"></i>
+            +91 98765 43210
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2019 - 2026 Shreesthi Infracon Private Limited. All Rights Reserved.
+        </div>
+        <div>
+          Built with Excellence &bull; Gomti Nagar Extension, Lucknow
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Category Filtering Script for gallery.html
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      const items = document.querySelectorAll('.gallery-card-wrapper');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+          items.forEach(item => {
+            const cat = item.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              item.style.display = 'block';
+              item.style.opacity = '0';
+              setTimeout(() => {
+                item.style.transition = 'opacity 0.3s ease';
+                item.style.opacity = '1';
+              }, 20);
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

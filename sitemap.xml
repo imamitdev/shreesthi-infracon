@@ -51,4 +51,14 @@
       <image:title>Nature Grove Residential Enclave Lucknow</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.shreesthiinfracon.com/gallery.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.shreesthiinfracon.com/assets/images/gallery/IMG_9667.JPG.jpeg</image:loc>
+      <image:title>Shreesthi Infracon Company Gallery Lucknow</image:title>
+    </image:image>
+  </url>
 </urlset>
