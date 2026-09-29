@@ -896,6 +896,7 @@ button, input, select, textarea {
   display: flex;
   gap: 24px;
   overflow-x: auto;
+  scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   padding: 15px 4px 35px;
   scrollbar-width: thin;

@@ -68,7 +68,7 @@ function initMobileNav() {
   });
 }
 
-/* ---------- 3. Horizontal Scrolling Services Showcase ---------- */
+/* ---------- 3. Horizontal Scrolling Services Showcase with Auto-Scroll ---------- */
 function initHorizontalScroll() {
   const scrollContainer = document.getElementById('servicesScrollContainer');
   const prevBtn = document.getElementById('servicesScrollPrev');
@@ -86,23 +86,72 @@ function initHorizontalScroll() {
     return 380;
   };
 
+  const scrollNext = () => {
+    const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+    // If reached end, loop smoothly back to beginning
+    if (scrollContainer.scrollLeft >= maxScroll - 20) {
+      scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      scrollContainer.scrollBy({ left: getScrollDistance(), behavior: 'smooth' });
+    }
+  };
+
+  const scrollPrev = () => {
+    if (scrollContainer.scrollLeft <= 20) {
+      scrollContainer.scrollTo({ left: scrollContainer.scrollWidth, behavior: 'smooth' });
+    } else {
+      scrollContainer.scrollBy({ left: -getScrollDistance(), behavior: 'smooth' });
+    }
+  };
+
+  // Auto-scroll Timer: advances every 3.5 seconds
+  let autoScrollTimer = null;
+  const AUTO_SCROLL_INTERVAL = 3500;
+
+  const startAutoScroll = () => {
+    stopAutoScroll();
+    autoScrollTimer = setInterval(() => {
+      scrollNext();
+    }, AUTO_SCROLL_INTERVAL);
+  };
+
+  const stopAutoScroll = () => {
+    if (autoScrollTimer) {
+      clearInterval(autoScrollTimer);
+      autoScrollTimer = null;
+    }
+  };
+
+  const resetAutoScroll = () => {
+    stopAutoScroll();
+    startAutoScroll();
+  };
+
+  // Button clicks
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
-      scrollContainer.scrollBy({
-        left: getScrollDistance(),
-        behavior: 'smooth'
-      });
+      scrollNext();
+      resetAutoScroll();
     });
   }
 
   if (prevBtn) {
     prevBtn.addEventListener('click', () => {
-      scrollContainer.scrollBy({
-        left: -getScrollDistance(),
-        behavior: 'smooth'
-      });
+      scrollPrev();
+      resetAutoScroll();
     });
   }
+
+  // Pause on hover so users can easily read cards
+  scrollContainer.addEventListener('mouseenter', stopAutoScroll);
+  scrollContainer.addEventListener('mouseleave', startAutoScroll);
+
+  // Pause on touch devices
+  scrollContainer.addEventListener('touchstart', stopAutoScroll, { passive: true });
+  scrollContainer.addEventListener('touchend', startAutoScroll, { passive: true });
+
+  // Start auto-scroll on load
+  startAutoScroll();
 
   // Drag to scroll functionality
   let isDown = false;
@@ -111,6 +160,7 @@ function initHorizontalScroll() {
 
   scrollContainer.addEventListener('mousedown', (e) => {
     isDown = true;
+    stopAutoScroll();
     scrollContainer.style.cursor = 'grabbing';
     startX = e.pageX - scrollContainer.offsetLeft;
     scrollLeft = scrollContainer.scrollLeft;
@@ -119,11 +169,13 @@ function initHorizontalScroll() {
   scrollContainer.addEventListener('mouseleave', () => {
     isDown = false;
     scrollContainer.style.cursor = 'grab';
+    startAutoScroll();
   });
 
   scrollContainer.addEventListener('mouseup', () => {
     isDown = false;
     scrollContainer.style.cursor = 'grab';
+    resetAutoScroll();
   });
 
   scrollContainer.addEventListener('mousemove', (e) => {
