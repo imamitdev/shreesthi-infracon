@@ -2278,6 +2278,31 @@ textarea.form-control {
   font-size: 0.85rem;
 }
 
+/* Catalog Video Hero Banner (Barney Estates Style) */
+.lot-hero-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px 85px;
+  border-bottom: 2px solid var(--color-gold-base);
+  color: var(--color-white);
+  text-align: center;
+  background-color: #07150e;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lot-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 14px;
+  color: var(--color-white);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
 /* ==========================================================================
    BARNEY ESTATES ULTRA-LUXURY SINGLE LOT DETAIL PAGE
    ========================================================================== */
