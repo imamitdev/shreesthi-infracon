@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Projects | Shreesthi Infracon Pvt. Ltd.</title>
-  <meta name="description" content="Explore landmark completed and ongoing plotted, residential, and commercial projects developed by Shreesthi Infracon Pvt. Ltd. in Lucknow, Uttar Pradesh.">
+  <meta name="description" content="Explore landmark completed and delivered plotted, residential, and commercial projects by Shreesthi Infracon Pvt. Ltd. in Lucknow, Uttar Pradesh.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Our Projects | Shreesthi Infracon Pvt. Ltd.">
@@ -24,92 +24,6 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
-  
-  <style>
-    /* Projects Page Specific Styles */
-    .page-hero {
-      position: relative;
-      background: linear-gradient(180deg, rgba(10, 28, 19, 0.9) 0%, rgba(7, 21, 14, 0.95) 100%), url('assets/images/services/IMG-20221122-WA0013.jpg') center/cover no-repeat;
-      padding: 100px 20px 80px;
-      color: var(--color-white);
-      text-align: center;
-      border-bottom: 2px solid var(--color-gold-base);
-    }
-
-    .project-detail-section {
-      padding: 90px 0;
-      border-bottom: 1px solid var(--color-border-subtle);
-    }
-
-    .project-detail-section:nth-child(even) {
-      background-color: var(--color-sage-light);
-    }
-
-    .project-detail-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .project-detail-grid.reverse {
-      grid-template-columns: 0.9fr 1.1fr;
-    }
-
-    @media (max-width: 900px) {
-      .project-detail-grid, .project-detail-grid.reverse {
-        grid-template-columns: 1fr;
-        gap: 35px;
-      }
-    }
-
-    .project-gallery-row {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-
-    .project-gallery-row img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(212, 175, 55, 0.2);
-      transition: transform var(--transition-normal);
-    }
-
-    .project-gallery-row img:hover {
-      transform: scale(1.03);
-    }
-
-    .project-specs-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin: 24px 0 32px;
-    }
-
-    @media (max-width: 500px) {
-      .project-specs-list {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .spec-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.92rem;
-      color: var(--color-text-primary);
-    }
-
-    .spec-item i {
-      color: var(--color-emerald-deep);
-      font-size: 1rem;
-    }
-  </style>
 </head>
 <body>
 
@@ -139,7 +53,6 @@
   <!-- ==================== STICKY NAVIGATION RIBBON ==================== -->
   <header class="header-sticky" id="mainHeader">
     <div class="container header-inner">
-      <!-- Logo in top left corner -->
       <a href="index.html#hero" class="brand-link">
         <img src="assets/images/logo/logo-icon-gold.png" alt="Shreesthi Infracon Emblem" class="brand-emblem">
         <div class="brand-text">
@@ -187,158 +100,92 @@
     </ul>
   </div>
 
-  <!-- ==================== PAGE HERO ==================== -->
-  <section class="page-hero">
+  <!-- ==================== HERO SECTION (BARNEY ESTATES STYLE) ==================== -->
+  <section class="lot-hero-banner" style="background-image: linear-gradient(180deg, rgba(7, 21, 14, 0.85) 0%, rgba(10, 28, 19, 0.95) 100%), url('assets/images/services/IMG-20221122-WA0013.jpg');">
     <div class="container">
-      <span class="section-tag" style="justify-content: center;">Portfolio of Excellence</span>
-      <h1 class="hero-main-title" style="font-size: clamp(2.2rem, 4.5vw, 3.8rem);">
-        Our Landmark <span class="gold-accent">Projects</span>
+      <span class="section-tag" style="justify-content: center;">Portfolio of Delivered Excellence</span>
+      <h1 class="lot-hero-title">
+        Properties &amp; Projects in Lucknow
       </h1>
-      <p class="section-desc light" style="margin: 0 auto 20px;">
-        Explore the three landmark projects successfully completed and delivered by Shreesthi Infracon Pvt. Ltd., transforming land into thoughtfully planned spaces and rewarding investments.
+      <p class="section-desc light" style="margin: 0 auto; max-width: 720px;">
+        Click on any project below to view full on-site photographs, technical master-plan specifications, location maps, and legal pack details.
       </p>
-      <div style="display: flex; justify-content: center; gap: 16px;">
-        <a href="#project-1" class="btn btn-gold">Project 01</a>
-        <a href="#project-2" class="btn btn-outline-white">Project 02</a>
-        <a href="#project-3" class="btn btn-outline-white">Project 03</a>
-      </div>
     </div>
   </section>
 
-  <!-- ==================== PROJECT 01 DETAIL ==================== -->
-  <section class="project-detail-section" id="project-1">
+  <!-- ==================== PROJECTS CATALOG GRID (BARNEY ESTATES GRID) ==================== -->
+  <section class="barney-catalog-section">
     <div class="container">
-      <div class="project-detail-grid">
+      
+      <div class="barney-catalog-header">
         <div>
-          <span class="section-tag">Delivered Township</span>
-          <h2 class="section-title">Project 01: Greenfield Plotted Township</h2>
-          <p style="color: var(--color-emerald-deep); font-weight: 700; margin-bottom: 12px;">
-            <i class="fas fa-map-marker-alt" style="color: var(--color-gold-base);"></i> Outer Ring Corridor, Lucknow
-          </p>
-          <p class="about-paragraph">
-            A master-planned 25-acre residential plotted development featuring wide metalled roads, dedicated avenue plantation, and underground infrastructure. Designed to cater to families wanting peaceful villa plots with immediate freehold registry and high capital appreciation potential.
-          </p>
-          <p class="about-paragraph">
-            With 100% transparent documentation, immediate mutation, and over 180+ plots handed over to proud owners, this township stands as a beacon of trust and quality execution in Lucknow.
-          </p>
-
-          <ul class="project-specs-list">
-            <li class="spec-item"><i class="fas fa-check-circle"></i> 40ft &amp; 30ft Black-Top Roads</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Underground Drainage &amp; Conduits</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> 24/7 Gated Security Plaza</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Solar Street Lighting</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Landscaped Green Community Parks</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> 100% Registry &amp; Possession Assured</li>
-          </ul>
-
-          <a href="index.html#query" class="btn btn-gold">
-            <i class="fas fa-paper-plane"></i> Inquire About Plots Here
-          </a>
+          <span class="section-tag">Featured Developments</span>
+          <h2 class="section-title" style="margin-bottom: 4px;">Our Landmark Projects</h2>
+          <p style="color: var(--color-text-secondary); font-size: 0.95rem;">Select any development to inspect comprehensive specifications</p>
         </div>
-
-        <div class="project-gallery-row">
-          <img src="assets/images/projects/project-1/IMG-20221129-WA0033.jpg" alt="Project 1 Site Photo 1">
-          <img src="assets/images/projects/project-1/IMG-20230815-WA0109.jpg" alt="Project 1 Site Photo 2">
-          <img src="assets/images/projects/project-1/IMG-20260601-WA0034.jpg" alt="Project 1 Site Photo 3">
-          <img src="assets/images/projects/project-1/WhatsApp Image 2026-09-22 at 12.46.33 PM.jpeg" alt="Project 1 Site Photo 4">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== PROJECT 02 DETAIL ==================== -->
-  <section class="project-detail-section" id="project-2">
-    <div class="container">
-      <div class="project-detail-grid reverse">
-        <div class="project-gallery-row">
-          <img src="assets/images/projects/project-2/IMG-20210604-WA0056.jpg" alt="Project 2 Photo 1" style="height: 240px;">
-          <img src="assets/images/projects/project-2/IMG-20240621-WA0008.jpg" alt="Project 2 Photo 2" style="height: 240px;">
-        </div>
-
         <div>
-          <span class="section-tag">Commercial Development</span>
-          <h2 class="section-title">Project 02: Commercial Complex &amp; Retail Hub</h2>
-          <p style="color: var(--color-emerald-deep); font-weight: 700; margin-bottom: 12px;">
-            <i class="fas fa-map-marker-alt" style="color: var(--color-gold-base);"></i> Near CMS Shaheed Path, Gomti Nagar Extension
-          </p>
-          <p class="about-paragraph">
-            A state-of-the-art commercial space designed specifically for retail showrooms, corporate branch offices, and business services. Strategically positioned on the high-traffic arterial corridor of Shaheed Path with outstanding visual frontage.
-          </p>
-          <p class="about-paragraph">
-            Engineered with modern structural durability, generous floor-to-ceiling heights, dedicated visitor parking, and high-capacity electrical backup to support uninterrupted enterprise operations.
-          </p>
-
-          <ul class="project-specs-list">
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Prime High-Visibility Frontage</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Ample Ground &amp; Basement Parking</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> High-Speed Elevators &amp; Power Backup</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Modern Glass &amp; Concrete Facade</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> 10-Minute Connectivity to Airport</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> High Rental Yield Asset</li>
-          </ul>
-
-          <a href="index.html#query" class="btn btn-emerald">
-            <i class="fas fa-paper-plane"></i> Inquire Commercial Spaces
+          <a href="index.html#query" class="btn btn-emerald" style="padding: 10px 20px; font-size: 0.85rem;">
+            <i class="fas fa-calendar-check"></i> Book An Appointment
           </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ==================== PROJECT 03 DETAIL ==================== -->
-  <section class="project-detail-section" id="project-3">
-    <div class="container">
-      <div class="project-detail-grid">
-        <div>
-          <span class="section-tag">Eco-Residential Enclave</span>
-          <h2 class="section-title">Project 03: Nature Grove Residential Enclave</h2>
-          <p style="color: var(--color-emerald-deep); font-weight: 700; margin-bottom: 12px;">
-            <i class="fas fa-map-marker-alt" style="color: var(--color-gold-base);"></i> Gomti Nagar Extension Periphery, Lucknow
-          </p>
-          <p class="about-paragraph">
-            Blending the tranquillity of nature with proximity to Lucknow's vibrant city hubs, Nature Grove is an eco-centric residential plotted enclave surrounded by green plantations and landscaped spaces.
-          </p>
-          <p class="about-paragraph">
-            Designed for buyers who value serene surroundings without compromising on convenience. Complete with water supply connectivity, robust demarcation, and clear legal approvals.
-          </p>
-
-          <ul class="project-specs-list">
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Tree-Lined Avenues &amp; Walking Tracks</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Rainwater Harvesting Infrastructure</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Peaceful Low-Density Living</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Close to Renowned Schools &amp; Hospitals</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Ready-to-Build Villa Layouts</li>
-            <li class="spec-item"><i class="fas fa-check-circle"></i> Complete Legal Title Clarity</li>
-          </ul>
-
-          <a href="index.html#query" class="btn btn-gold">
-            <i class="fas fa-paper-plane"></i> Schedule Site Inspection
-          </a>
-        </div>
-
-        <div class="project-gallery-row">
-          <img src="assets/images/projects/project-3/IMG-20240715-WA0023.jpg" alt="Project 3 Photo 1" style="height: 240px;">
-          <img src="assets/images/projects/project-3/IMG-20251104-WA0019.jpg" alt="Project 3 Photo 2" style="height: 240px;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== CTA SECTION ==================== -->
-  <section style="background: var(--color-forest-dark); padding: 80px 0; color: var(--color-white); text-align: center; border-top: 1px solid rgba(212,175,55,0.3);">
-    <div class="container" style="max-width: 760px;">
-      <h2 class="section-title light">Planning Your Next Real Estate Investment?</h2>
-      <p class="section-desc light" style="margin: 0 auto 30px;">
-        Our real estate advisors provide personalized consultations, site inspections, and end-to-end documentation assistance for all our projects in Lucknow.
-      </p>
-      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-        <a href="index.html#query" class="btn btn-gold">
-          <i class="fas fa-calendar-check"></i> Book An Appointment
+      <!-- 3-Column Lot Grid (Matching https://live2.barneyestates.co.uk/) -->
+      <div class="barney-lot-grid">
+        
+        <!-- Lot 1: Greenfield Plotted Township -->
+        <a href="project-1.html" class="barney-lot-card">
+          <div class="barney-lot-img-wrap">
+            <img src="assets/images/projects/project-1/IMG-20221129-WA0033.jpg" alt="Project 1: Greenfield Plotted Township" class="barney-lot-img">
+            <span class="barney-lot-tag-badge">Delivered Township</span>
+          </div>
+          <div class="barney-lot-details">
+            <div class="barney-lot-meta-row">
+              <span class="barney-lot-number">Project 01</span>
+              <span class="barney-lot-price">Freehold Registry</span>
+            </div>
+            <div class="barney-lot-title">
+              Greenfield Plotted Township, Outer Ring Road, Lucknow
+            </div>
+          </div>
         </a>
-        <a href="https://wa.me/919876543210?text=Hello%20Shreesthi%20Infracon%2C%20I%20am%20interested%20in%20your%20projects." target="_blank" class="btn btn-outline-white">
-          <i class="fab fa-whatsapp"></i> Chat On WhatsApp
+
+        <!-- Lot 2: Commercial Complex & Retail Hub -->
+        <a href="project-2.html" class="barney-lot-card">
+          <div class="barney-lot-img-wrap">
+            <img src="assets/images/projects/project-2/IMG-20240621-WA0008.jpg" alt="Project 2: Commercial Complex & Retail Hub" class="barney-lot-img">
+            <span class="barney-lot-tag-badge">Commercial Landmark</span>
+          </div>
+          <div class="barney-lot-details">
+            <div class="barney-lot-meta-row">
+              <span class="barney-lot-number">Project 02</span>
+              <span class="barney-lot-price">Corporate Retail</span>
+            </div>
+            <div class="barney-lot-title">
+              Commercial Complex &amp; Retail Hub, Shaheed Path, Gomti Nagar Extension
+            </div>
+          </div>
         </a>
+
+        <!-- Lot 3: Nature Grove Residential Enclave -->
+        <a href="project-3.html" class="barney-lot-card">
+          <div class="barney-lot-img-wrap">
+            <img src="assets/images/projects/project-3/IMG-20240715-WA0023.jpg" alt="Project 3: Nature Grove Residential Enclave" class="barney-lot-img">
+            <span class="barney-lot-tag-badge">Eco Residential</span>
+          </div>
+          <div class="barney-lot-details">
+            <div class="barney-lot-meta-row">
+              <span class="barney-lot-number">Project 03</span>
+              <span class="barney-lot-price">Immediate Possession</span>
+            </div>
+            <div class="barney-lot-title">
+              Nature Grove Residential Enclave, Gomti Nagar Extension Periphery, Lucknow
+            </div>
+          </div>
+        </a>
+
       </div>
+
     </div>
   </section>
 
@@ -357,6 +204,11 @@
           <p class="footer-desc">
             “Creating the Canvas for a New Tomorrow.” Established in 2019, delivering premium residential &amp; commercial plotted developments, construction services, and real estate investments in Lucknow.
           </p>
+          <div style="display: flex; gap: 12px; margin-top: 6px;">
+            <a href="https://wa.me/919876543210" target="_blank" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:shreesthiinfracon@gmail.com" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #d4af37;"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+919876543210" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #95d5b2;"><i class="fas fa-phone"></i></a>
+          </div>
         </div>
 
         <div>
@@ -372,16 +224,16 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">Projects</h4>
+          <h4 class="footer-col-title">Delivered Projects</h4>
           <ul class="footer-links-list">
-            <li><a href="#project-1"><i class="fas fa-angle-right"></i> Greenfield Township</a></li>
-            <li><a href="#project-2"><i class="fas fa-angle-right"></i> Commercial Retail Hub</a></li>
-            <li><a href="#project-3"><i class="fas fa-angle-right"></i> Nature Grove Enclave</a></li>
+            <li><a href="project-1.html"><i class="fas fa-angle-right"></i> Project 01: Greenfield Township</a></li>
+            <li><a href="project-2.html"><i class="fas fa-angle-right"></i> Project 02: Commercial Complex</a></li>
+            <li><a href="project-3.html"><i class="fas fa-angle-right"></i> Project 03: Nature Grove Enclave</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Office Contact</h4>
+          <h4 class="footer-col-title">Contacts</h4>
           <p style="font-size: 0.88rem; line-height: 1.6; color: rgba(255, 255, 255, 0.75); margin-bottom: 12px;">
             <i class="fas fa-map-marker-alt" style="color: #d4af37; margin-right: 6px;"></i>
             D1/17 Vardaan khand near CMS Shahedpath, Gomti nagar extension, Lucknow, UP
@@ -408,7 +260,7 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
+  <!-- Floating WhatsApp CTA -->
   <a href="https://wa.me/919876543210?text=Hello%20Shreesthi%20Infracon%2C%20I%20would%20like%20to%20know%20more%20about%20your%20projects." 
      target="_blank" 
      class="floating-whatsapp" 
