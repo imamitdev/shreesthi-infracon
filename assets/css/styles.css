@@ -221,15 +221,9 @@ button, input, select, textarea {
   border-color: var(--color-white);
 }
 
-/* ---------- Top Notification Bar ---------- */
+/* ---------- Top Notification Bar (Hidden as requested) ---------- */
 .top-bar {
-  background: #07150e;
-  color: var(--color-mint-leaf);
-  font-size: 0.82rem;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-  z-index: 101;
-  position: relative;
+  display: none !important;
 }
 
 .top-bar-inner {
@@ -490,17 +484,16 @@ button, input, select, textarea {
 
 .hero-emblem-badge {
   display: inline-block;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .hero-badge-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  padding: 5px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%);
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 0 35px rgba(212, 175, 55, 0.3);
+  width: 95px;
+  height: 95px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 20px rgba(243, 206, 101, 0.45));
   object-fit: contain;
 }
 
@@ -528,7 +521,7 @@ button, input, select, textarea {
 }
 
 .hero-main-title .gold-accent {
-  color: #f3ce65;
+  color: #ffffff;
   display: inline-block;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.95), 0 4px 18px rgba(0, 0, 0, 0.95), 0 0 35px rgba(0, 0, 0, 0.9);
 }
@@ -538,7 +531,7 @@ button, input, select, textarea {
   letter-spacing: 3px;
   font-family: var(--font-serif);
   font-weight: 600;
-  color: #f3d87f;
+  color: #ffffff;
   margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.95), 0 4px 14px rgba(0, 0, 0, 0.9);
 }
