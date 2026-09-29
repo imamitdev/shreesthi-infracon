@@ -52,10 +52,11 @@
     </div>
   </div>
 
-  <!-- ==================== STICKY NAVIGATION RIBBON ==================== -->
+  <!-- ==================== STICKY / FROZEN NAVIGATION RIBBON ==================== -->
+  <!-- Exactly follows wireframe: logo on left, and on right: Home | For Query | About us | Our Projects | Services | Contacts -->
   <header class="header-sticky" id="mainHeader">
     <div class="container header-inner">
-      <!-- Brand Logo & Name (Top Left Corner) -->
+      <!-- Top Left Corner: Company Logo -->
       <a href="#hero" class="brand-link">
         <img src="assets/images/logo/logo-icon-gold.png" alt="Shreesthi Infracon Emblem" class="brand-emblem">
         <div class="brand-text">
@@ -64,23 +65,22 @@
         </div>
       </a>
 
-      <!-- Desktop Main Navigation -->
+      <!-- Main Navigation in requested sequence -->
       <nav class="main-nav">
         <a href="#hero" class="nav-link active">Home</a>
-        <!-- Hyperlink to website's middle section with intro about company as requested -->
-        <a href="#about" class="nav-link">About Us</a>
+        <a href="#query" class="nav-link">For Query</a>
+        <a href="#about" class="nav-link">About us</a>
+        <!-- Separate Dedicated Page for Our Projects -->
+        <a href="projects.html" class="nav-link" style="color: var(--color-gold-light);">Our Projects</a>
         <a href="#services" class="nav-link">Services</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-link">Contacts</a>
       </nav>
 
-      <!-- Action Buttons -->
+      <!-- Action Button & Mobile Toggle -->
       <div class="header-actions">
-        <a href="#appointment" class="btn btn-gold header-cta">
+        <a href="#query" class="btn btn-gold header-cta">
           <i class="fas fa-calendar-check"></i> Book Appointment
         </a>
-        <!-- Mobile Drawer Toggle -->
         <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
           <span></span>
           <span></span>
@@ -100,18 +100,17 @@
     </div>
     <ul class="mobile-nav-links">
       <li><a href="#hero" class="mobile-nav-link">Home</a></li>
-      <li><a href="#about" class="mobile-nav-link">About Us</a></li>
-      <li><a href="#services" class="mobile-nav-link">Our Services</a></li>
-      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
-      <li><a href="#gallery" class="mobile-nav-link">Site Gallery</a></li>
-      <li><a href="#contact" class="mobile-nav-link">Contact Us</a></li>
-      <li><a href="#appointment" class="btn btn-gold" style="margin-top: 15px;">Book Consultation</a></li>
+      <li><a href="#query" class="mobile-nav-link">For Query</a></li>
+      <li><a href="#about" class="mobile-nav-link">About us</a></li>
+      <li><a href="projects.html" class="mobile-nav-link" style="color: var(--color-gold-base);">Our Projects</a></li>
+      <li><a href="#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contacts</a></li>
+      <li><a href="#query" class="btn btn-gold" style="margin-top: 15px;">Book Appointment</a></li>
     </ul>
   </div>
 
-  <!-- ==================== HERO SECTION (BARNEY ESTATES INSPIRED) ==================== -->
+  <!-- ==================== 1. HERO SECTION (NAME & VIDEO BACKGROUND) ==================== -->
   <section class="hero-section" id="hero">
-    <!-- Fullscreen Drone Video Background -->
     <div class="hero-video-wrap">
       <video class="hero-video" autoplay muted loop playsinline poster="assets/images/services/IMG-20221122-WA0013.jpg">
         <source src="assets/videos/hero-drone-1.mp4" type="video/mp4">
@@ -122,14 +121,13 @@
     <div class="hero-pattern"></div>
 
     <div class="container hero-content">
-      <!-- Luxury Gold Emblem Badge -->
       <div class="hero-emblem-badge">
         <img src="assets/images/logo/logo-badge-gold.jpg" alt="Shreesthi Infracon Luxury Crest" class="hero-badge-img">
       </div>
 
       <div class="hero-subtitle-top">Premier Real Estate &amp; Plotted Infrastructure</div>
 
-      <!-- In The Middle - Company's Name -->
+      <!-- In The Middle: Company's Name -->
       <h1 class="hero-main-title">
         “<span class="gold-accent">Shreesthi Infracon</span>”
       </h1>
@@ -148,14 +146,14 @@
 
       <!-- CTA Buttons -->
       <div class="hero-cta-group">
-        <a href="#projects" class="btn btn-gold">
+        <a href="projects.html" class="btn btn-gold">
           <i class="fas fa-city"></i> Explore Our Projects
         </a>
         <a href="#services" class="btn btn-outline-white">
-          <i class="fas fa-layer-group"></i> Our Real Estate Services
+          <i class="fas fa-layer-group"></i> Our Services
         </a>
-        <a href="#appointment" class="btn btn-outline-gold">
-          <i class="fas fa-paper-plane"></i> Book Appointment
+        <a href="#query" class="btn btn-outline-gold">
+          <i class="fas fa-paper-plane"></i> For Query / Appointment
         </a>
       </div>
 
@@ -181,26 +179,26 @@
     </div>
   </section>
 
-  <!-- ==================== BANNER UNDER HERO (LIKE BARNEY ESTATES) ==================== -->
+  <!-- Informative Ribbon Below Hero (Barney Estates Style) -->
   <div class="hero-bottom-ribbon">
     <div class="container">
       <div class="ribbon-info">
-        <span class="ribbon-badge">Latest Update</span>
-        <span>Prime Plotted &amp; Commercial Developments near CMS Shaheed Path &amp; Gomti Nagar Extension.</span>
+        <span class="ribbon-badge">Prime Locations</span>
+        <span>Residential plots &amp; commercial hubs along Shaheed Path &amp; Gomti Nagar Extension, Lucknow.</span>
       </div>
-      <a href="#appointment" class="ribbon-cta">
-        Schedule a Private Site Visit <i class="fas fa-arrow-right"></i>
+      <a href="projects.html" class="ribbon-cta">
+        View Delivered Projects <i class="fas fa-arrow-right"></i>
       </a>
     </div>
   </div>
 
-  <!-- ==================== ABOUT SECTION (MIDDLE SECTION FROM BRIEF) ==================== -->
+  <!-- ==================== 2. ABOUT US SECTION ==================== -->
   <section class="about-section" id="about">
     <div class="container">
       <div class="about-grid">
         <!-- Text Column -->
         <div class="about-text-content reveal-on-scroll">
-          <span class="section-tag">About Shreesthi Infracon</span>
+          <span class="section-tag">About Us</span>
           
           <div class="about-brand-header">
             <img src="assets/images/logo/logo-icon-gold.png" alt="Company Logo" class="about-logo-thumb">
@@ -242,7 +240,7 @@
             <div class="pillar-item">
               <div class="pillar-icon"><i class="fas fa-drafting-compass"></i></div>
               <div class="pillar-title">Planned Spaces</div>
-              <div class="pillar-desc">Broad roads, green reserves &amp; modern amenities.</div>
+              <div class="pillar-desc">Broad metalled roads, greenery &amp; modern amenities.</div>
             </div>
             <div class="pillar-item">
               <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
@@ -251,9 +249,12 @@
             </div>
           </div>
 
-          <div style="margin-top: 32px;">
-            <a href="#contact" class="btn btn-emerald">
-              <i class="fas fa-map-marked-alt"></i> Visit Our On-Site Office
+          <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="projects.html" class="btn btn-emerald">
+              <i class="fas fa-city"></i> View Our Projects Page
+            </a>
+            <a href="#query" class="btn btn-outline-gold" style="color: var(--color-forest-dark);">
+              <i class="fas fa-paper-plane"></i> Contact For Query
             </a>
           </div>
         </div>
@@ -263,8 +264,8 @@
           <div class="about-main-card">
             <img src="assets/images/gallery/IMG_9667.JPG.jpeg" alt="Shreesthi Infracon Site Development" class="about-main-img">
             <div class="about-badge-floating">
-              <div class="badge-val">3 Completed</div>
-              <div class="badge-txt">Landmark Projects Successfully Delivered in Lucknow</div>
+              <div class="badge-val">3 Projects</div>
+              <div class="badge-txt">Successfully Completed &amp; Delivered in Lucknow</div>
             </div>
           </div>
           <!-- Sub Floating Image -->
@@ -276,7 +277,7 @@
     </div>
   </section>
 
-  <!-- ==================== SERVICES SECTION (HORIZONTAL SCROLLING SECTION) ==================== -->
+  <!-- ==================== 3. SERVICES (HORIZONTAL SCROLLING SECTION) ==================== -->
   <section class="services-section" id="services">
     <div class="container">
       <div class="services-header-row">
@@ -284,7 +285,7 @@
           <span class="section-tag">What We Offer</span>
           <h2 class="section-title light">Our Real Estate Services</h2>
           <p class="section-desc light">
-            Comprehensive development, plotted layout solutions, and end-to-end consultancy crafted for discerning homebuyers and investors.
+            Comprehensive development, plotted layout solutions, and end-to-end consultancy crafted for homebuyers and investors.
           </p>
         </div>
         <!-- Horizontal Scroll Arrow Controls -->
@@ -449,221 +450,18 @@
     </div>
   </section>
 
-  <!-- ==================== PROJECTS SHOWCASE SECTION ==================== -->
-  <section class="projects-section" id="projects">
-    <div class="container">
-      <div class="projects-header reveal-on-scroll">
-        <span class="section-tag">Delivered Excellence</span>
-        <h2 class="section-title">Our Landmark Projects</h2>
-        <p class="section-desc" style="margin: 0 auto;">
-          Shreesthi Infracon has successfully completed three prestigious projects, creating enduring value, vibrant neighborhoods, and high-yielding assets.
-        </p>
-      </div>
-
-      <div class="projects-grid">
-        
-        <!-- Project 1 Card -->
-        <div class="project-card reveal-on-scroll">
-          <div class="project-media-wrap">
-            <img src="assets/images/projects/project-1/IMG-20221129-WA0033.jpg" alt="Project 1: Greenfield Plotted Township" class="project-img">
-            <span class="project-status-tag"><i class="fas fa-check-circle"></i> Successfully Completed</span>
-          </div>
-          <div class="project-content">
-            <div class="project-location">
-              <i class="fas fa-map-marker-alt"></i> Outer Ring Corridor, Lucknow
-            </div>
-            <h3 class="project-title">Project 01: Greenfield Plotted Township</h3>
-            <p class="project-desc">
-              A meticulously planned 25-acre residential plotted development featuring wide metalled roads, landscaped parks, underground conduits, and immediate registry.
-            </p>
-            <div class="project-features">
-              <span class="project-tag">Residential Plots</span>
-              <span class="project-tag">Gated Campus</span>
-              <span class="project-tag">Clear Titles</span>
-            </div>
-            <div class="project-card-footer">
-              <span style="font-size: 0.82rem; font-weight: 700; color: #1f563c;">100% Sold &amp; Handed Over</span>
-              <button class="btn btn-emerald view-project-btn" data-project="1" style="padding: 8px 16px; font-size: 0.82rem;">
-                View Specs
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 Card -->
-        <div class="project-card reveal-on-scroll">
-          <div class="project-media-wrap">
-            <img src="assets/images/projects/project-2/IMG-20240621-WA0008.jpg" alt="Project 2: Commercial Complex & Landmark Development" class="project-img">
-            <span class="project-status-tag"><i class="fas fa-check-circle"></i> Completed Landmark</span>
-          </div>
-          <div class="project-content">
-            <div class="project-location">
-              <i class="fas fa-map-marker-alt"></i> Near CMS Shaheed Path, Gomti Nagar Extension
-            </div>
-            <h3 class="project-title">Project 02: Commercial Complex &amp; Retail Hub</h3>
-            <p class="project-desc">
-              Modern commercial real estate designed for retail showrooms, corporate offices, and business centers with heavy footfall visibility and seamless arterial road access.
-            </p>
-            <div class="project-features">
-              <span class="project-tag">Commercial Spaces</span>
-              <span class="project-tag">Prime Frontage</span>
-              <span class="project-tag">High ROI</span>
-            </div>
-            <div class="project-card-footer">
-              <span style="font-size: 0.82rem; font-weight: 700; color: #1f563c;">Corporate Leased</span>
-              <button class="btn btn-emerald view-project-btn" data-project="2" style="padding: 8px 16px; font-size: 0.82rem;">
-                View Specs
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 Card -->
-        <div class="project-card reveal-on-scroll">
-          <div class="project-media-wrap">
-            <img src="assets/images/projects/project-3/IMG-20240715-WA0023.jpg" alt="Project 3: Nature Grove Residential Enclave" class="project-img">
-            <span class="project-status-tag"><i class="fas fa-check-circle"></i> Completed &amp; Occupied</span>
-          </div>
-          <div class="project-content">
-            <div class="project-location">
-              <i class="fas fa-map-marker-alt"></i> Gomti Nagar Extension Periphery, Lucknow
-            </div>
-            <h3 class="project-title">Project 03: Nature Grove Enclave</h3>
-            <p class="project-desc">
-              An eco-friendly residential community designed around lush green belts and serene tree-lined streets. Ideal for dream home construction and generational investment.
-            </p>
-            <div class="project-features">
-              <span class="project-tag">Eco-Plotted</span>
-              <span class="project-tag">Immediate Possession</span>
-              <span class="project-tag">Green Living</span>
-            </div>
-            <div class="project-card-footer">
-              <span style="font-size: 0.82rem; font-weight: 700; color: #1f563c;">Delivered On Schedule</span>
-              <button class="btn btn-emerald view-project-btn" data-project="3" style="padding: 8px 16px; font-size: 0.82rem;">
-                View Specs
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== WHY CHOOSE US (BARNEY ESTATES INSPIRATION) ==================== -->
-  <section class="why-us-section">
-    <div class="container">
-      <div style="text-align: center; max-width: 680px; margin: 0 auto 50px;">
-        <span class="section-tag">Our Pillars</span>
-        <h2 class="section-title light">Why Partner With Shreesthi Infracon</h2>
-      </div>
-
-      <div class="why-us-grid">
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-handshake"></i></div>
-          <h4 class="why-title">Buy With Confidence</h4>
-          <p class="why-desc">All properties feature verified registry, unencumbered titles, and complete government approvals.</p>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-compass"></i></div>
-          <h4 class="why-title">Prime UP Corridors</h4>
-          <p class="why-desc">Strategically handpicked developments in Gomti Nagar Extension, Shaheed Path, and high-growth transit corridors.</p>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-file-contract"></i></div>
-          <h4 class="why-title">100% Transparency</h4>
-          <p class="why-desc">Zero hidden clauses. Transparent pricing, documentation assistance, and dedicated customer advisors at every stage.</p>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-seedling"></i></div>
-          <h4 class="why-title">Sustainable Growth</h4>
-          <p class="why-desc">Focusing on eco-conscious plotted layouts and robust infrastructure designed to appreciate year after year.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== GALLERY SECTION ==================== -->
-  <section class="gallery-section" id="gallery">
-    <div class="container">
-      <div class="gallery-header reveal-on-scroll">
-        <span class="section-tag">Visual Portfolio</span>
-        <h2 class="section-title">Site &amp; Development Gallery</h2>
-        <p class="section-desc" style="margin: 0 auto;">
-          Authentic on-site glimpses into our ongoing and delivered plotted developments, infrastructure work, and landscape planning.
-        </p>
-      </div>
-
-      <!-- Real Authentic Photos Grid -->
-      <div class="gallery-grid">
-        
-        <div class="gallery-item span-2">
-          <img src="assets/images/gallery/IMG_9667.JPG.jpeg" alt="Township Road and Plot Layout" class="gallery-img">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
-            <div class="gallery-caption">Township Road Network &amp; Layout</div>
-          </div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="assets/images/gallery/20250602_171142.jpg" alt="Site Infrastructure Work" class="gallery-img">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
-            <div class="gallery-caption">Plotted Boundary Demarcation</div>
-          </div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="assets/images/gallery/20251224_190936.jpg" alt="Evening View of Development" class="gallery-img">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
-            <div class="gallery-caption">Avenue Street Lighting &amp; Conduits</div>
-          </div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="assets/images/gallery/IMG_9689.JPG.jpeg" alt="Gated Entry Gate & Boundary" class="gallery-img">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
-            <div class="gallery-caption">Entrance Plaza &amp; Security Post</div>
-          </div>
-        </div>
-
-        <div class="gallery-item span-2">
-          <img src="assets/images/gallery/20260211_162855.jpg" alt="Scenic Green Landscape & Park" class="gallery-img">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
-            <div class="gallery-caption">Green Belt &amp; Environmental Landscaping</div>
-          </div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="assets/images/gallery/IMG_9947.JPG.jpeg" alt="On-Site Review & Survey" class="gallery-img">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
-            <div class="gallery-caption">Engineering Survey &amp; Leveling</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== APPOINTMENT / QUERY FORM SECTION ==================== -->
-  <section class="appointment-section" id="appointment">
+  <!-- ==================== 4. FOR QUERY / APPOINTMENT SECTION ==================== -->
+  <section class="appointment-section" id="query">
     <div class="container">
       <div class="appointment-wrapper reveal-on-scroll">
         
         <!-- Sidebar Information -->
         <div class="appointment-info-sidebar">
           <div>
-            <span class="section-tag" style="color: #95d5b2;">Connect With Experts</span>
-            <h3 class="sidebar-title">Book an Appointment or Query</h3>
+            <span class="section-tag" style="color: #95d5b2;">Consultation &amp; Query</span>
+            <h3 class="sidebar-title">For Query / Appointment</h3>
             <p class="sidebar-desc">
-              Whether you are planning to purchase a residential plot, invest in commercial property, or need expert construction consultancy, our team is at your service.
+              Whether you are planning to purchase a residential plot, invest in commercial property, or need expert construction consultancy, our team is here to assist.
             </p>
 
             <div class="contact-highlight-list">
@@ -694,23 +492,23 @@
           </div>
 
           <div>
-            <a href="https://wa.me/919876543210?text=Hello%20Shreesthi%20Infracon%20Team%2C%20I%20am%20interested%20in%20your%20real%20estate%20projects." target="_blank" class="whatsapp-direct-btn">
+            <a href="https://wa.me/919876543210?text=Hello%20Shreesthi%20Infracon%20Team%2C%20I%20have%20an%20inquiry%20regarding%20your%20properties." target="_blank" class="whatsapp-direct-btn">
               <i class="fab fa-whatsapp"></i> Chat Directly on WhatsApp
             </a>
           </div>
         </div>
 
-        <!-- Interactive Form Area -->
+        <!-- Form Area (Matching Wireframe Form: Name, Details, Submit) -->
         <div class="appointment-form-area">
-          <h3 class="form-heading">Schedule Your Consultation</h3>
-          <p class="form-sub">Fill in the form below and an investment advisor will get back to you within 2 hours.</p>
+          <h3 class="form-heading">Send Your Query / Book Appointment</h3>
+          <p class="form-sub">Please fill in your details below and an advisor will connect with you promptly.</p>
 
           <form id="appointmentForm">
             <div class="form-grid">
               
               <div class="form-group">
                 <label for="clientName" class="form-label">Full Name *</label>
-                <input type="text" id="clientName" name="name" class="form-control" placeholder="e.g. Ramesh Chandra" required>
+                <input type="text" id="clientName" name="name" class="form-control" placeholder="Enter your full name" required>
               </div>
 
               <div class="form-group">
@@ -720,13 +518,13 @@
 
               <div class="form-group">
                 <label for="clientEmail" class="form-label">Email Address</label>
-                <input type="email" id="clientEmail" name="email" class="form-control" placeholder="e.g. name@example.com">
+                <input type="email" id="clientEmail" name="email" class="form-control" placeholder="e.g. yourname@example.com">
               </div>
 
               <div class="form-group">
-                <label for="appointmentService" class="form-label">Service of Interest *</label>
+                <label for="appointmentService" class="form-label">Interested Service *</label>
                 <select id="appointmentService" name="service" class="form-control" required>
-                  <option value="">-- Choose Service --</option>
+                  <option value="">-- Select Service --</option>
                   <option value="Residential Projects">Residential Projects</option>
                   <option value="Commercial Projects">Commercial Projects</option>
                   <option value="Residential & Commercial Plots">Residential & Commercial Plots</option>
@@ -744,35 +542,34 @@
               </div>
 
               <div class="form-group">
-                <label for="budgetRange" class="form-label">Budget / Requirement Type</label>
+                <label for="budgetRange" class="form-label">Requirement Type</label>
                 <select id="budgetRange" name="budget" class="form-control">
-                  <option value="Standard Plot (1000 - 1800 sq.ft)">Standard Plot (1000 - 1800 sq.ft)</option>
-                  <option value="Large Villa Plot (2000+ sq.ft)">Large Villa Plot (2000+ sq.ft)</option>
-                  <option value="Commercial Plot / Retail Space">Commercial Plot / Retail Space</option>
-                  <option value="Construction & Contracting">Construction &amp; Contracting</option>
-                  <option value="General Consultancy">General Consultancy</option>
+                  <option value="Residential Plot">Residential Plot</option>
+                  <option value="Commercial Land / Space">Commercial Land / Space</option>
+                  <option value="Construction Service">Construction Service</option>
+                  <option value="General Property Consultation">General Property Consultation</option>
                 </select>
               </div>
 
               <div class="form-group full-width">
-                <label for="clientMessage" class="form-label">Your Message / Specific Requirements</label>
-                <textarea id="clientMessage" name="message" class="form-control" placeholder="Tell us about the location, size, or timeline you have in mind..."></textarea>
+                <label for="clientMessage" class="form-label">Message / Details</label>
+                <textarea id="clientMessage" name="message" class="form-control" placeholder="Describe your requirement, preferred location, or questions..."></textarea>
               </div>
 
             </div>
 
             <div class="form-submit-row">
               <button type="submit" class="btn btn-gold" style="width: 100%; padding: 15px; font-size: 1rem;">
-                <i class="fas fa-check-circle"></i> Submit Appointment Request
+                <i class="fas fa-paper-plane"></i> Submit Query
               </button>
             </div>
 
-            <!-- Success notification banner -->
+            <!-- Confirmation banner -->
             <div class="form-success-banner" id="formSuccessBanner">
               <i class="fas fa-check-circle" style="font-size: 1.4rem;"></i>
               <div>
-                <strong>Appointment Request Submitted!</strong><br>
-                Thank you for reaching out to Shreesthi Infracon. Our team is reviewing your requirements and will reach you shortly.
+                <strong>Query Submitted Successfully!</strong><br>
+                Thank you for contacting Shreesthi Infracon. Our team will review your query and reach out to you shortly.
               </div>
             </div>
           </form>
@@ -782,20 +579,19 @@
     </div>
   </section>
 
-  <!-- ==================== CONTACT SECTION & MAP ==================== -->
+  <!-- ==================== 5. CONTACTS SECTION ==================== -->
   <section class="contact-section" id="contact">
     <div class="container">
       <div style="text-align: center; max-width: 680px; margin: 0 auto 50px;" class="reveal-on-scroll">
         <span class="section-tag">Reach Us</span>
-        <h2 class="section-title">Our Lucknow Office &amp; Connect</h2>
+        <h2 class="section-title">Contacts</h2>
         <p class="section-desc" style="margin: 0 auto;">
-          Drop by our corporate office or schedule an on-site visit to inspect current developments along Shaheed Path and Gomti Nagar Extension.
+          Visit our corporate office or connect directly with our advisory desk for site visits and appointments.
         </p>
       </div>
 
-      <!-- 3 Key Contact Cards -->
+      <!-- Contact Info Cards (Left text / details & right details as in wireframe) -->
       <div class="contact-cards-grid">
-        
         <div class="contact-info-card reveal-on-scroll">
           <div class="contact-card-icon"><i class="fas fa-building"></i></div>
           <h4 class="contact-card-title">Corporate Office</h4>
@@ -818,17 +614,16 @@
 
         <div class="contact-info-card reveal-on-scroll">
           <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
-          <h4 class="contact-card-title">Email Us</h4>
+          <h4 class="contact-card-title">Email Correspondence</h4>
           <p class="contact-card-text">
-            Official Correspondence:<br>
+            Official Email:<br>
             <a href="mailto:shreesthiinfracon@gmail.com" style="color: #1f563c; font-weight: 700; word-break: break-all;">shreesthiinfracon@gmail.com</a><br>
             <span style="font-size: 0.8rem; color: #718479;">Quick response within 24 hours</span>
           </p>
         </div>
-
       </div>
 
-      <!-- Google Map Container -->
+      <!-- Map Embed -->
       <div class="map-embed-container reveal-on-scroll">
         <iframe 
           title="Shreesthi Infracon Location"
@@ -841,12 +636,12 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER (BARNEY ESTATES LUXURY STYLE) ==================== -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top-grid">
         
-        <!-- Brand Summary Column -->
+        <!-- Brand Summary -->
         <div class="footer-brand-info">
           <div class="footer-logo-row">
             <img src="assets/images/logo/logo-icon-gold.png" alt="Shreesthi Infracon Logo" class="footer-emblem">
@@ -865,35 +660,35 @@
           </div>
         </div>
 
-        <!-- Quick Navigation Links -->
+        <!-- Navigation Links Matching Wireframe -->
         <div>
-          <h4 class="footer-col-title">Quick Links</h4>
+          <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links-list">
-            <li><a href="#hero"><i class="fas fa-angle-right"></i> Home Overview</a></li>
-            <li><a href="#about"><i class="fas fa-angle-right"></i> About Company</a></li>
-            <li><a href="#services"><i class="fas fa-angle-right"></i> Real Estate Services</a></li>
-            <li><a href="#projects"><i class="fas fa-angle-right"></i> Delivered Projects</a></li>
-            <li><a href="#gallery"><i class="fas fa-angle-right"></i> Site Gallery</a></li>
-            <li><a href="#appointment"><i class="fas fa-angle-right"></i> Book Appointment</a></li>
+            <li><a href="#hero"><i class="fas fa-angle-right"></i> Home</a></li>
+            <li><a href="#query"><i class="fas fa-angle-right"></i> For Query</a></li>
+            <li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-right"></i> Our Projects</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Services</a></li>
+            <li><a href="#contact"><i class="fas fa-angle-right"></i> Contacts</a></li>
           </ul>
         </div>
 
-        <!-- Core Services Links -->
+        <!-- Key Services -->
         <div>
-          <h4 class="footer-col-title">Key Services</h4>
+          <h4 class="footer-col-title">Services</h4>
           <ul class="footer-links-list">
-            <li><a href="#services"><i class="fas fa-angle-right"></i> Residential Plots</a></li>
-            <li><a href="#services"><i class="fas fa-angle-right"></i> Commercial Development</a></li>
-            <li><a href="#services"><i class="fas fa-angle-right"></i> Real Estate Investment</a></li>
-            <li><a href="#services"><i class="fas fa-angle-right"></i> Construction &amp; Planning</a></li>
-            <li><a href="#services"><i class="fas fa-angle-right"></i> Property Buying/Selling</a></li>
-            <li><a href="#services"><i class="fas fa-angle-right"></i> Land Consultancy</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Residential Projects</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Commercial Projects</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Plotted Developments</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Investment Solutions</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Construction Services</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Property Consultancy</a></li>
           </ul>
         </div>
 
-        <!-- Corporate Address -->
+        <!-- Office Details -->
         <div>
-          <h4 class="footer-col-title">Office Contact</h4>
+          <h4 class="footer-col-title">Contacts</h4>
           <p style="font-size: 0.88rem; line-height: 1.6; color: rgba(255, 255, 255, 0.75); margin-bottom: 12px;">
             <i class="fas fa-map-marker-alt" style="color: #d4af37; margin-right: 6px;"></i>
             D1/17 Vardaan khand near CMS Shahedpath, Gomti nagar extension, Lucknow, UP
@@ -921,7 +716,7 @@
     </div>
   </footer>
 
-  <!-- ==================== FLOATING WHATSAPP CTA ==================== -->
+  <!-- Floating WhatsApp CTA -->
   <a href="https://wa.me/919876543210?text=Hello%20Shreesthi%20Infracon%2C%20I%20would%20like%20to%20know%20more%20about%20your%20projects%20and%20plots." 
      target="_blank" 
      class="floating-whatsapp" 
@@ -929,24 +724,6 @@
     <i class="fab fa-whatsapp"></i>
     <span class="floating-whatsapp-tooltip">Chat with us on WhatsApp</span>
   </a>
-
-  <!-- ==================== LIGHTBOX MODAL ==================== -->
-  <div class="lightbox-modal" id="lightboxModal">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
-    <div class="lightbox-img-wrap">
-      <img src="" alt="Gallery Image" class="lightbox-img" id="lightboxImage">
-    </div>
-    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
-  </div>
-
-  <!-- ==================== PROJECT DETAILS MODAL ==================== -->
-  <div class="project-modal" id="projectModal">
-    <div class="project-modal-container">
-      <button class="project-modal-close" id="projectModalClose" aria-label="Close Modal">&times;</button>
-      <div id="projectModalBody"></div>
-    </div>
-  </div>
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>

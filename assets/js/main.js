@@ -139,7 +139,7 @@ function initHorizontalScroll() {
 function initServiceInquiryLinks() {
   const inquiryButtons = document.querySelectorAll('.service-action-btn');
   const serviceSelect = document.getElementById('appointmentService');
-  const appointmentSection = document.getElementById('appointment');
+  const appointmentSection = document.getElementById('query') || document.getElementById('appointment');
 
   inquiryButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
