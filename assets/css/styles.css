@@ -448,9 +448,9 @@ button, input, select, textarea {
   height: 100%;
   background: linear-gradient(
     180deg,
-    rgba(5, 14, 9, 0.3) 0%,
-    rgba(0, 0, 0, 0.08) 40%,
-    rgba(5, 14, 9, 0.42) 100%
+    rgba(7, 21, 14, 0.45) 0%,
+    rgba(7, 21, 14, 0.38) 45%,
+    rgba(7, 21, 14, 0.6) 100%
   );
   z-index: 2;
 }
@@ -465,7 +465,7 @@ button, input, select, textarea {
   background-size: 32px 32px;
   z-index: 2;
   pointer-events: none;
-  opacity: 0.25;
+  opacity: 0.2;
 }
 
 .hero-content {
@@ -509,9 +509,9 @@ button, input, select, textarea {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: var(--color-mint-leaf);
+  color: #9fe2bf;
   margin-bottom: 12px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero-main-title {
@@ -521,17 +521,17 @@ button, input, select, textarea {
   letter-spacing: 2px;
   line-height: 1.15;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: #ffffff;
   margin-bottom: 8px;
-  text-shadow: 0 4px 25px rgba(0, 0, 0, 0.95), 0 2px 10px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .hero-main-title .gold-accent {
-  background: var(--color-gold-gradient);
+  color: #e5c365;
+  background: linear-gradient(135deg, #fff3c9 0%, #d4af37 50%, #b8860b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.9));
 }
 
 .hero-pvt {
@@ -539,9 +539,9 @@ button, input, select, textarea {
   letter-spacing: 3px;
   font-family: var(--font-serif);
   font-weight: 600;
-  color: var(--color-gold-light);
+  color: #f3d87f;
   margin-bottom: 20px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero-divider {
@@ -562,7 +562,6 @@ button, input, select, textarea {
 .hero-divider i {
   color: var(--color-gold-base);
   font-size: 0.9rem;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8));
 }
 
 .hero-tagline {
@@ -572,7 +571,7 @@ button, input, select, textarea {
   color: var(--color-white);
   margin-bottom: 34px;
   letter-spacing: 0.5px;
-  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.95), 0 1px 5px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .hero-cta-group {
